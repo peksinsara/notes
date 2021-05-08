@@ -2,12 +2,12 @@ import React from "react";
 import { MdDeleteForever } from "react-icons/md";
 import "./NotesSingle.css";
 
-function NotesSingle({id, text, date}) {
+function NotesSingle({ id, text, date }) {
   return (
     <div className="notes-single">
-          <span>{ text}</span>
+      <span>{text}</span>
       <div className="notes-footer">
-              <small>{ date}</small>
+        <small>{date}</small>
         <MdDeleteForever className="delete-icon" size="1.3em" />
       </div>
     </div>
