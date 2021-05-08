@@ -1,5 +1,5 @@
 .notes-single{
-    background-color: pink;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     border-radius:10px;
     padding:1rem;
     min-height:170px;

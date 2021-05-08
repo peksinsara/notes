@@ -1,0 +1,35 @@
+.add-note{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);    border-radius:10px;
+    padding:1rem;
+    min-height:170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+textarea{
+    border: none;
+    resize: none;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+textarea:focus{
+    border: none;
+    outline: none;
+}
+
+.note-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-save{
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    border-radius: 15px;
+    border:none;
+    padding:5px 10px 5px 10px;
+}
+.btn-save:hover{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+
+
+}

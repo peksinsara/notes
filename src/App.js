@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { nanoid } from "nanoid";
 import NotesList from "./NotesList";
+import AddNote from "./components/AddNote/AddNote";
 
 function App() {
   /*passing an array to each element */
@@ -22,9 +23,21 @@ function App() {
     },
   ]);
 
+  const addNote = (text) => {
+    const date = new Date();
+    const newNote = {
+      id: nanoid(),
+      text: text,
+      date: date.toLocaleDateString(),
+    };
+    /*adding note to the end of the array */
+    const newNotes = [...notes, newNote];
+    setNotes(newNotes);
+  };
+
   return (
     <div className="app">
-      <NotesList notes={notes} />
+      <NotesList notes={notes} handleAddNote={addNote} />
     </div>
   );
 }
