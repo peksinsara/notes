@@ -1,0 +1,38 @@
+.header h1 {
+  font-size: 3em;
+}
+
+button {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  border-radius: 15px;
+  border: none;
+  padding: 5px 10px 5px 10px;
+}
+button:hover {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+}
+button:focus{
+    outline: none;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dark-mode{
+    background-color: black;
+}
+.dark-mode h1{
+    color: white;
+}

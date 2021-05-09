@@ -36,8 +36,16 @@ function App() {
 
   /*saving to local storage*/
   useEffect(() => {
-    localStorage.setItem("react-notes-app-data", JSON.stingify(notes));
+    localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
   }, [notes]);
+
+  /*retrieve saved data*/
+  useEffect(() => {
+    const savedData = JSON.parse(localStorage.getItem("react-notes-app-data"));
+    if (savedData) {
+      setNotes(savedData);
+    }
+  }, []);
 
   const addNote = (text) => {
     const date = new Date();
