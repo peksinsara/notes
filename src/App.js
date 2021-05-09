@@ -5,23 +5,28 @@ import AddNote from "./components/AddNote/AddNote";
 
 function App() {
   /*passing an array to each element */
-  const [notes, setNotes] = useState([
-    {
-      id: nanoid(),
-      text: "Testig one",
-      date: "17.03.2021",
-    },
-    {
-      id: nanoid(),
-      text: "Testig second",
-      date: "17.03.2021",
-    },
-    {
-      id: nanoid(),
-      text: "Testig third",
-      date: "17.03.2021",
-    },
-  ]);
+	const [notes, setNotes] = useState([
+		{
+			id: nanoid(),
+			text: 'This is my first note!',
+			date: '15/04/2021',
+		},
+		{
+			id: nanoid(),
+			text: 'This is my second note!',
+			date: '21/04/2021',
+		},
+		{
+			id: nanoid(),
+			text: 'This is my third note!',
+			date: '28/04/2021',
+		},
+		{
+			id: nanoid(),
+			text: 'This is my new note!',
+			date: '30/04/2021',
+		},
+	]);
 
   const addNote = (text) => {
     const date = new Date();

@@ -8,7 +8,7 @@ function NotesList({ notes, handleAddNote }) {
     <div className="notes-page">
       {/*for each component render the note */}
       {notes.map((notes) => (
-        <NotesSingle id={notes.id} text={notes.text} date={notes.text} />
+        <NotesSingle id={notes.id} text={notes.text} date={notes.date} />
       ))}
       <AddNote handleAddNote={handleAddNote} />
     </div>
